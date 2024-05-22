@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fake Bleed</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+        #header {
+            background-color: #222;
+            color: #fff;
+            padding: 10px;
+            text-align: left;
+        }
+        #header h1 {
+            margin: 0;
+            font-size: 24px;
+            color: red;
+        }
+        #invite {
+            position: absolute;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            cursor: pointer;
+        }
+        #faq {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            cursor: pointer;
+        }
+        #content {
+            text-align: center;
+            padding-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <h1>Fake Bleed</h1>
+        <div id="invite">Invite</div>
+        <div id="faq">FAQ</div>
+    </div>
+    <div id="content">
+        <img src="bleed.png" alt="Fake Bleed Logo">
+    </div>
+
+    <!-- JavaScript to handle invite and FAQ actions -->
+    <script>
+        document.getElementById('invite').addEventListener('click', function() {
+            window.location.href = 'YOUR_INVITE_LINK_HERE';
+        });
+
+        document.getElementById('faq').addEventListener('click', function() {
+            // Replace this alert with your custom FAQ handling
+            alert('Your custom FAQ text here');
+        });
+    </script>
+</body>
+</html>
